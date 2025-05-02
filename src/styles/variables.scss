@@ -1,0 +1,38 @@
+$secondary: rgba(40, 40, 40, 1);
+
+$body-font-family: 'Inter', sans-serif;
+
+.v-application {
+
+    .display-1,
+    .display-2,
+    .display-3,
+    .display-4,
+    .headline,
+    .title,
+    .subtitle-1,
+    .subtitle-2,
+    .body-1,
+    .body-2,
+    .caption,
+    .overline,
+    .text-h4
+     {
+        font-family: $body-font-family;
+    }
+}
+
+$headings: (
+    'h1': ('font-family': $body-font-family,
+    ),
+    'h2': ('font-family': $body-font-family,
+    ),
+    'h3': ('font-family': $body-font-family,
+    ),
+    'h4': ('font-family': $body-font-family,
+    ),
+    'h5': ('font-family': $body-font-family,
+    ),
+    'h6': ('font-family': $body-font-family,
+    ),
+);

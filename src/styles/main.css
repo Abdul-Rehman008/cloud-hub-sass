@@ -1,0 +1,62 @@
+@import "./base.css";
+
+/* main.css or in App.vue <style> */
+.customContainer {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.swiper-wrapper {
+    align-items: center;
+}
+
+.ctaCommon {
+  width: 153px;
+  height: 52px;
+  border-radius: 39px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(315deg, #ff240e 0%, #ff4600 100%);
+  box-shadow: 0px -1.5px 0px 0px #ffffff52 inset;
+  text-transform: unset;
+  margin-top: 20px;
+}
+
+.bg-gradient-orange {
+  background: linear-gradient(315deg, #ff240e 0%, #ff4600 100%) !important;
+}
+
+.bg-rounded-100{
+  border-radius: 100px;
+}
+
+
+@media (min-width: 600px) {
+  .customContainer {
+    max-width: 570px !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .customContainer {
+    max-width: 920px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .customContainer {
+    max-width: 1180px !important;
+  }
+}
+
+@media (min-width: 1320px) {
+  .customContainer {
+    max-width: 1280px !important;
+  }
+}
