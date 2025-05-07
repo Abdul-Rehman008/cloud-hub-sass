@@ -1,6 +1,6 @@
 <template>
     <v-container class="customContainer py-md-16 py-10">
-        <v-row :class="flexClass" align="center" justify="space-between" class="flex-wrap flex-md-column flex-column-reverse">
+        <v-row :class="[feedbackFlexClass, shareFlexClass]" align="center" justify="space-between" class="">
             <!-- Left Section -->
             <v-col cols="12" md="6">
                 <v-chip class="mb-4 text-white font-weight-bold bg-gradient-orange bg-rounded-100">
@@ -95,8 +95,11 @@ const features = props.features || ['Coded', '100% Secure'];
 const button = props.button || { text: 'See how it works' };
 
 
-const flexClass = computed(() => ({
-    'flex-row-reverse': !props.showFeedback,
+const feedbackFlexClass = computed(() => ({
+    'flex-md-row-reverse flex-column-reverse': !props.showFeedback,
+}))
+const shareFlexClass = computed(() => ({
+    'flex-md-row flex-column': props.showFeedback,
 }))
 
 const selectedImage = computed(() =>
